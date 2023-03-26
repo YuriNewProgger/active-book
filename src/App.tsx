@@ -12,7 +12,7 @@ const App = () => {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    dispatch(setUser(userFactory()));
+    //dispatch(setUser(userFactory()));
   }, [])
 
   return (

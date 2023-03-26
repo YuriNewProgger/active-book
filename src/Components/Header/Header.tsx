@@ -13,7 +13,11 @@ export const Header = () => {
             <div className={s.logo}>Active Book</div>
             <div className={s.controls}>
                 {user === null || user === undefined ? 
-                <Button>Войти</Button> :
+                <Button styles={{
+                    root: {
+                        backgroundColor: 'transparent', border: '2px solid #8d8d8d'
+                    }
+                }}>Войти</Button> :
                 <Avatar color="cyan" radius="xl">{user.name[0]}{user.surName[0]}</Avatar>}
             </div>
         </div>
