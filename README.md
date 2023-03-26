@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Программа управления проектами
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Клиентская часть программы.
 
 ## Available Scripts
 
