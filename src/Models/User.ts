@@ -9,7 +9,7 @@ export class User{
         public patronymic: string,
         public position: string,
         public role: string,
-        public projects: Project[],
-        public tasks: Task[])
+        public projects: Project[] = new Array(),
+        public tasks: Task[] = new Array())
         {}
 }
