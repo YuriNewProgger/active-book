@@ -3,8 +3,8 @@ import './App.css';
 import { Body } from './Components/Body/Body';
 import { Header } from './Components/Header/Header';
 import { useAppDispatch } from './Redux/Hooks/Hooks';
-import { setUser } from './Redux/Slices/UserSlice';
-import { userFactory } from './Mock/UserMock';
+import { setOnlineUsersOnProject, setUser } from './Redux/Slices/UserSlice';
+import { userFactory, usersFactory } from './Mock/UserMock';
 
 
 const App = () => {
@@ -12,7 +12,8 @@ const App = () => {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    //dispatch(setUser(userFactory()));
+    dispatch(setUser(userFactory()));
+    dispatch(setOnlineUsersOnProject(usersFactory(5)))
   }, [])
 
   return (
