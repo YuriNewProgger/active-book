@@ -7,9 +7,10 @@ const positions: string[] = ['Team lead', 'Developer', 'Ingeneer', 'Manager', 'T
 const roles: string[] = ['user', 'admin'];
 
 export function userFactory(){
-    return new User('Nicko', 'Smith', 'Evelin', 'developer', 'developer');
+    return new User('Nicko', 'Smith', 'Evelin', 'USER', 'developer');
 }
 
+//#region Фабрика создания массива рандомных пользователей
 export function usersFactory(countUsers: number){
     let listUsers: User[] = new Array();
     for (let i = 0; i < countUsers; i++) {
@@ -24,7 +25,7 @@ export function usersFactory(countUsers: number){
 
     return listUsers;
 }
-
+//#endregion
 
 //Генерация случайного целого числа в заданом интервале, минимум и максимум включительно
 function getRandomInt(min:number, max:number) {

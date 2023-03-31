@@ -13,7 +13,6 @@ const App = () => {
 
   useEffect(() => {
     dispatch(setUser(userFactory()));
-    dispatch(setOnlineUsersOnProject(usersFactory(5)))
   }, [])
 
   return (
