@@ -6,7 +6,7 @@ export const Body = () => {
     return(
         <div className={s.outterContainerBody}>
                 <ProjectsBar/>
-                Tasks
+                Cards Task
         </div>
     )
 }
