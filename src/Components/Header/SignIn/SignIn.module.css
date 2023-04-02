@@ -1,0 +1,9 @@
+.outterContainerSignIn{
+    color: white;
+}
+
+.outterContainerBtn{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
